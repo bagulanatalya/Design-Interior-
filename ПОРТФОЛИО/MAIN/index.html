@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <img src="1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="3.png" style="width:100%">
+        </div>
+    
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <script>
+        var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }   
+        </script>
+        <div class="menu">
+            <div id="design">
+                ДИЗАЙН ИНТЕРЬЕРА
+            </div>
+            <div id="text">
+                За время работы дизайн-студия разработала и реализовала проекты домов, начиная с фундамента и заканчивая интерьером.<br><br>
+Наша главная задача — разработка интерьеров, помогающих по максимуму использовать возможности помещения.<br><br>
+Мы работаем под ключ с заказами любой сложности и в любых стилях.<br>
+            </div>
+            <div id="ourServices">
+                НАШИ УСЛУГИ
+            </div>
+                
+            </div>
+        </div>
+
+    <div class="content">
+        <main>
+            <div class="main-content">
+                <div class="text cont_img1">
+                    <span >Дизайн-проект частных интерьеров</span>
+                    <div class="img_1"> </div>
+                </div>
+                <div class="text cont_img_2">
+                    <span id="img_2">Авторский надзор</span>
+                    <div class="img_2"> </div>
+                </div>
+                <div class="text cont_img_3">
+                    <span id="img_3">планировочное решение</span>
+                    <div class="img_3"></div>                    
+                </div>
+                <div class="text cont_img_4">
+                    <span id="img_4">комплектация объекта</span>
+                    <div class="img_4"></div>                    
+                </div>
+                <div class="img_footer">
+                    <div class="text cont_img_5">
+                        <span id="cont_img_5">Архитектурное проектирование</span>
+                        <div class="img_5"></div>                    
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>        
+    </div>
+    <div class="footer-content">
+        <div class="footerLeft">
+            <div class="text1"> Политика конфиндециальности<br>
+                Соглашение об обработке персональных данных
+            </div> 
+            <div class="icons">
+                <a href="html://wa.me/72384583">WA</a>
+                <a href="html://t.me/72384583">Telegram</a>
+                <!-- <a href="html://t.me/72384583">Pinterest</a> -->
+                <!-- <a href="html://t.me/72384583">VK</a> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
